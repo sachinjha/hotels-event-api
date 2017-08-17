@@ -1,0 +1,82 @@
+type: bluemix
+server:
+  displayName: US South
+  name: us-south
+  host: us.apiconnect.ibmcloud.com
+org:
+  id: 5967168b0cf271b6ad077ed4
+  name: sachinkjinibmcom-microservices
+  displayName: sachinkj@in.ibm.com (microservices)
+  orgType: apiProvider
+  status: active
+  advPortalOverride: true
+  extUaaAuthenticated: false
+  requiresSSLClientCertCheck: false
+  dormant: false
+  url: 'https://us.apiconnect.ibmcloud.com/v1/orgs/5967168b0cf271b6ad077ed4'
+  externalOrgId: aa81b188-9d31-4e9e-be42-5c016fcfb8c1
+  externalInviteOverride: 'https://console.ng.bluemix.net/apis/catalog/invitation'
+  externalSpaceId: aa81b188-9d31-4e9e-be42-5c016fcfb8c1
+  externalNativeOrgId: f9df43a9-0b05-43b7-9393-405d899231ad
+catalog:
+  id: 5967168c0cf271b6ad077ee0
+  orgId: 5967168b0cf271b6ad077ed4
+  name: Sandbox
+  shortName: sb
+  owner:
+    id: 573f46b70cf2c17cc4824a22
+    username: sachinkj@in.ibm.com
+    context: apimanager
+    idpId: 58341db4e63b1219f0f068d1
+    email: sachinkj@in.ibm.com
+    firstName: Sachinnn Jha
+    lastName: ''
+    status: ACTIVE
+    lastLoginTime: '2017-07-28T11:50:07.205+0000'
+    url: 'https://us.apiconnect.ibmcloud.com/v1/users/573f46b70cf2c17cc4824a22'
+  apiCenter: false
+  portalType: ADVANCED
+  portalUrl: >-
+    https://developer.us.apiconnect.ibmcloud.com/sachinkjinibmcom-microservices/sb
+  customPortalUrl: >-
+    https://developer.us.apiconnect.ibmcloud.com/sachinkjinibmcom-microservices/sb
+  advPortalUrl: >-
+    https://sb-sachinkjinibmcom-microservices.developer.us.apiconnect.ibmcloud.com
+  gatewayType: DataPowerGateway
+  gwServices:
+    - id: PRODAPIC_APIMGMT_GATEWAY
+      endpointUrl: 'https://api.us.apiconnect.ibmcloud.com/sachinkjinibmcom-microservices/sb'
+  idp: 5967168f0cf271b6ad077ee1
+  idps:
+    - 5967168f0cf271b6ad077ee1
+  availableRoles:
+    - viewer
+    - developer
+  default: false
+  autoDeploy: true
+  restrictedDeployment: false
+  invitationEnabled: true
+  selfSignUpEnabled: true
+  spaceEnabled: false
+  spaceIds:
+    - 596716910cf271b6ad077ee9
+  testAppEnabled: true
+  testAppCredentials:
+    clientId: 167a8fc6-80aa-4cc5-b06e-4ea3e93fd7a1
+    clientSecret: mG7nN2uS5oI1tJ3gU4tI1rC3dK3aH0fP0uU6lV2dG4bS3cM0dC
+  createdAt: '2017-07-13T06:43:27.418+0000'
+  updatedAt: '2017-07-17T06:24:24.936+0000'
+  createdBy: apim-ops@wwpdl.vnet.ibm.com
+  updatedBy: sachinkj@in.ibm.com
+  url: >-
+    https://us.apiconnect.ibmcloud.com/v1/orgs/5967168b0cf271b6ad077ed4/environments/5967168c0cf271b6ad077ee0
+  applicationLifecycleEnabled: false
+  productDeploymentApprovalRequiredStates: []
+  orgName: sachinkjinibmcom-microservices
+space:
+  none: true
+app:
+  new: true
+  name: onboarding-event-api
+id: e6816ebe-7cbb-4552-a4d2-3b9ab0eee5a5
+target: 1.0.0
