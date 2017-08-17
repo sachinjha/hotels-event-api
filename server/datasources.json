@@ -1,0 +1,8 @@
+{
+  "cloudant-events-db": {
+    "url": "https://87cb6c15-8658-45b7-aee0-5a4b5ba22adc-bluemix:4a9d837cc29607de3cef074ff837b7c765925c774fdcf3c6beb66364fda55950@87cb6c15-8658-45b7-aee0-5a4b5ba22adc-bluemix.cloudant.com",
+    "database": "eventsdb",
+    "name": "cloudant-events-db",
+    "connector": "cloudant"
+  }
+}

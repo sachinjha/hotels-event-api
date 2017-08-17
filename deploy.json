@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Hotels Micro Services Pipeline Setup",
+  "description": "Deployment of the Hotels Micro Services",
+  "longDescription": "The Delivery Pipeline for DevOps Services allows you to automate your continuous deployment setup. To avoid conflicts, make sure to use unique application names. We recommend to use a common prefix like your name or initials.",
+  "type": "object",
+  "properties": {
+    "selected-region": {
+      "description": "The Bluemix region",
+      "type": "string"
+    },
+    "selected-organization": {
+      "description": "The Bluemix org",
+      "type": "string"
+    },
+   "selected-space": {
+      "description": "The Bluemix space",
+      "type": "string"
+    },
+    "apic-username": {
+      "description": "APIC username",
+      "type": "string"
+    },
+    "apic-password": {
+      "description": "APIC password",
+      "type": "string"
+    },
+    "api-app-name": {
+      "description": "API cf app name",
+      "type": "string"
+    }
+  },
+  "required": ["selected-region", "selected-organization", "selected-space", "ui-app-name", "dealsQ-app-name", "hotelQ-app-name","locationQ-app-name","controller-app-name"],
+  "form": [
+   {
+      "type": "validator",
+      "url": "/devops/setup/bm-helper/helper.html"
+   },
+    {
+      "type": "text",
+      "readonly": false,
+      "title": "APIC Username",
+      "key": "apic-username"
+    },
+    {
+      "type": "text",
+      "readonly": false,
+      "title": "APIC Password",
+      "key": "apic-password"
+    },
+    {
+      "type": "text",
+      "readonly": false,
+      "title": "API APP Name",
+      "key": "api-app-name"
+    },
+    {
+      "type": "table",
+      "columnCount": 3,
+      "widths": ["20%", "20%", "20%"],
+      "items": [
+        {
+          "type": "label",
+          "title": "Region"
+        },
+        {
+          "type": "label",
+          "title": "Organization"
+        },
+        {
+          "type": "label",
+          "title": "Space"
+        },
+        {
+          "type": "select",
+          "key": "selected-region"
+        },
+        {
+          "type": "select",
+          "key": "selected-organization"
+        },
+        {
+          "type": "select",
+          "key": "selected-space",
+          "readonly": false
+        }
+      ]
+    }
+  ]
+}

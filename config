@@ -1,0 +1,13 @@
+us.apiconnect.ibmcloud.com.meta:
+  formFactor: BLUEMIX_PUBLIC
+  serverCapabilities:
+    authTypes:
+      - basic
+      - token
+  toolkit:
+    version_recommended: 2.1.30
+    version_minimum: 2.1.30
+app: >-
+  apic-app://us.apiconnect.ibmcloud.com/orgs/sachinkjinibmcom-microservices/apps/onboarding-event-api-20170811092400998-event-api
+catalog: >-
+  apic-catalog://us.apiconnect.ibmcloud.com/orgs/sachinkjinibmcom-microservices/catalogs/sb
