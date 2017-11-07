@@ -27,6 +27,7 @@ if [ ! -f ./yaml ]; then
     chmod +x yaml
 fi
 
+set -x
 
 #create cloudant service instance 
 cf create-service cloudantNoSQLDB Lite hotels-events-db
