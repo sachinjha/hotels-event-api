@@ -12,7 +12,6 @@ echo "env variables are:"
 echo ${REPO_BRANCH}
 echo ${APIC_URL_US}
 echo ${SPACE}
-echo ${APIC_USERNAME}
 echo ${CF_APP_NAME}
 echo ${REGION}
 
@@ -58,7 +57,7 @@ echo "yes" | apic
 echo "no" | apic
 
 echo -e "Login and config set catalog.."
-apic login -u $APIC_USERNAME -p $APIC_PASSWORD -s ${APIC_URL_US}
+apic login -k ${BLUEMIX_API_KEY} -s ${APIC_URL_US}
 apic config:set catalog=apic-catalog://${APIC_URL_US}/orgs/${ORGS}/catalogs/sb
 apic organizations -s us.apiconnect.ibmcloud.com
 #apic config:set app=apic-app://${APIC_URL_US}/orgs/${ORGS}/apps/$CF_APP_NAME
