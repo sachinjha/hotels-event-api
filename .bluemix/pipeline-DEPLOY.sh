@@ -35,7 +35,7 @@ cf create-service cloudantNoSQLDB Lite hotels-events-db
 cf create-service-key hotels-events-db for-api
 
 # create api connect service
-cf create-service APIConnect Essentials hotels-apiconnect
+#cf create-service APIConnect Essentials hotels-apiconnect
 
 # retrieve the URL - it contains credentials + API URL
 CLOUDANT_URL=`cf service-key hotels-events-db for-api | grep \"url\" | awk -F '"' '{print $4}'`
